@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        /* Highlight highest sales regions */
+        .highest-sales {
+            background-color: #ffeb3b; /* Light yellow for highest sales */
+            font-weight: bold;
+        }
+        /* Style for total sales calculation */
+        .total-sales {
+            font-weight: bold;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Sales Report</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Salesperson</th>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Unit Price</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <td>North</td>
+                <td>John Doe</td>
+                <td>Widget A</td>
+                <td>100</td>
+                <td>$10</td>
+                <td class="total-sales">$1000</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <td>South</td>
+                <td>Jane Smith</td>
+                <td>Widget B</td>
+                <td>150</td>
+                <td>$8</td>
+                <td class="total-sales">$1200</td>
+            </tr>
+            <!-- Row 3 (Highlighting highest sales) -->
+            <tr class="highest-sales">
+                <td>East</td>
+                <td>Mary Johnson</td>
+                <td>Widget C</td>
+                <td>200</td>
+                <td>$15</td>
+                <td class="total-sales">$3000</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td>West</td>
+                <td>James Lee</td>
+                <td>Widget A</td>
+                <td>50</td>
+                <td>$10</td>
+                <td class="total-sales">$500</td>
+            </tr>
+            <!-- Row 5 -->
+            <tr>
+                <td>North</td>
+                <td>Paul White</td>
+                <td>Widget B</td>
+                <td>120</td>
+                <td>$8</td>
+                <td class="total-sales">$960</td>
+            </tr>
+            <!-- Row 6 -->
+            <tr>
+                <td>South</td>
+                <td>Linda Green</td>
+                <td>Widget C</td>
+                <td>180</td>
+                <td>$15</td>
+                <td class="total-sales">$2700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">Grand Total Sales</th>
+                <th class="total-sales">$9460</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
