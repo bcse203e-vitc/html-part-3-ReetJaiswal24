@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Organization Hierarchy</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        /* Alternate row colors */
+        tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Company Organization Hierarchy</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Department Name</th>
+                <th rowspan="2">Manager</th>
+                <th rowspan="2">Number of Employees</th>
+                <th colspan="2">Budget</th>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <th>Percentage of Total Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HR</td>
+                <td>John Doe</td>
+                <td>15</td>
+                <td>$200,000</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Engineering</td>
+                <td rowspan="2">Jane Smith</td>
+                <td>45</td>
+                <td>$800,000</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Marketing</td>
+                <td>25</td>
+                <td>$500,000</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Sales</td>
+                <td>Michael Johnson</td>
+                <td>35</td>
+                <td>$300,000</td>
+                <td>10%</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
