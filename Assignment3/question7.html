@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        /* Color codes for session types */
+        .keynote {
+            background-color: #ffeb3b; /* Yellow for Keynote */
+        }
+        .workshop {
+            background-color: #4caf50; /* Green for Workshop */
+        }
+        .panel {
+            background-color: #2196f3; /* Blue for Panel Discussion */
+        }
+        .networking {
+            background-color: #9e9e9e; /* Grey for Networking */
+        }
+        /* Adding tooltips for speaker names and session descriptions */
+        td[title] {
+            cursor: pointer;
+        }
+        /* Legend style to prevent overlap */
+        .legend {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .legend ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .legend li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .legend span {
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Conference Timetable</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time Slot</th>
+                <th>Room A</th>
+                <th>Room B</th>
+                <th>Room C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td class="keynote" title="Speaker: Dr. Alice Smith. 'The Future of AI.'">Keynote</td>
+                <td class="workshop" title="Speaker: John Doe. 'AI in Business.'">Workshop</td>
+                <td class="networking" title="Networking Event. Meet and greet with peers.">Networking</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td rowspan="2" class="workshop" title="Speaker: Jane Lee. 'AI for Good.'">Workshop</td>
+                <td class="panel" title="Panel: Industry Leaders discuss AI advancements.">Panel</td>
+                <td class="keynote" title="Speaker: Prof. Mark Johnson. 'AI and Society.'">Keynote</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td class="workshop" title="Speaker: Dr. Kate Williams. 'Machine Learning Basics.'">Workshop</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td colspan="3" class="networking" title="Lunch and Networking. Connect with others over lunch.">Lunch and Networking</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td class="panel" title="Panel Discussion: 'AI in Healthcare.'">Panel</td>
+                <td class="workshop" title="Speaker: Bob White. 'AI in Education.'">Workshop</td>
+                <td class="keynote" title="Speaker: Dr. Emily Clark. 'Advancements in Robotics.'">Keynote</td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td class="workshop" title="Speaker: Sarah Miller. 'Natural Language Processing.'">Workshop</td>
+                <td class="panel" title="Panel: 'The Impact of AI on Society.'">Panel</td>
+                <td class="networking" title="Networking Event. Meet and greet with peers.">Networking</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 4:00 PM</td>
+                <td class="keynote" title="Speaker: Dr. Alan Turner. 'AI and the Environment.'">Keynote</td>
+                <td class="workshop" title="Speaker: Michael Harris. 'AI in Healthcare.'">Workshop</td>
+                <td class="panel" title="Panel: 'AI and Business Ethics.'">Panel</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="legend">
+        <h3>Legend</h3>
+        <ul>
+            <li><span style="background-color: #ffeb3b;">Keynote</span> - Main keynote speakers</li>
+            <li><span style="background-color: #4caf50;">Workshop</span> - Hands-on sessions</li>
+            <li><span style="background-color: #2196f3;">Panel</span> - Panel discussions</li>
+            <li><span style="background-color: #9e9e9e;">Networking</span> - Networking events</li>
+        </ul>
+    </div>
+
+</body>
+</html>

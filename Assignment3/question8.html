@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        /* Styling for theoretical and practical exams */
+        .theory {
+            background-color: #e7f7ff; /* Light blue for theory exams */
+        }
+        .practical {
+            background-color: #fff3cd; /* Light yellow for practical exams */
+        }
+        /* Additional styling for the main table */
+        .exam-schedule td {
+            vertical-align: top;
+        }
+        /* Styling for the total exams column */
+        .total-exams {
+            background-color: #f8d7da; /* Light red for the total exams column */
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Exam Schedule</h2>
+
+    <table class="exam-schedule">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>9:00 AM - 12:00 PM</th>
+                <th>1:00 PM - 4:00 PM</th>
+                <th>Total Exams</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>March 1, 2025</td>
+                <td>
+                    <table>
+                        <tr class="theory">
+                            <td>Mathematics</td>
+                            <td>3 hours</td>
+                        </tr>
+                        <tr class="practical">
+                            <td>Chemistry Lab</td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr class="theory">
+                            <td>Physics</td>
+                            <td>3 hours</td>
+                        </tr>
+                        <tr class="practical">
+                            <td>Biology Lab</td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">4 Exams</td>
+            </tr>
+            <tr>
+                <td>March 2, 2025</td>
+                <td>
+                    <table>
+                        <tr class="theory">
+                            <td>English</td>
+                            <td>3 hours</td>
+                        </tr>
+                        <tr class="practical">
+                            <td>Computer Science Lab</td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr class="theory">
+                            <td>History</td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">3 Exams</td>
+            </tr>
+            <tr>
+                <td>March 3, 2025</td>
+                <td>
+                    <table>
+                        <tr class="theory">
+                            <td>Economics</td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr class="practical">
+                            <td>Physics Lab</td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">2 Exams</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

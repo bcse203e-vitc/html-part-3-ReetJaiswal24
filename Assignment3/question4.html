@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Schedule</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        /* Highlight entire row for international flights */
+        .international {
+            background-color: #e7f7ff; /* Light blue background for international flights */
+        }
+        /* Flight status color coding */
+        .on-time {
+            background-color: #d4edda; /* Green for On Time */
+        }
+        .delayed {
+            background-color: #fff3cd; /* Yellow for Delayed */
+        }
+        .cancelled {
+            background-color: #f8d7da; /* Red for Cancelled */
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Flight Schedule</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <th>Destination</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Duration</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="international">
+                <td>AI202</td>
+                <td>New York</td>
+                <td>10:00 AM</td>
+                <td>12:00 PM</td>
+                <td>
+                    <abbr title="5 hours 30 minutes">5h 30m</abbr>
+                </td>
+                <td class="on-time">On Time</td>
+            </tr>
+            <tr>
+                <td>AI305</td>
+                <td>Delhi</td>
+                <td>1:30 PM</td>
+                <td>3:00 PM</td>
+                <td>
+                    <abbr title="1 hour 30 minutes">1h 30m</abbr>
+                </td>
+                <td class="delayed">Delayed</td>
+            </tr>
+            <tr class="international">
+                <td>AI150</td>
+                <td>London</td>
+                <td>6:00 AM</td>
+                <td>4:00 PM</td>
+                <td>
+                    <abbr title="8 hours">8h</abbr>
+                </td>
+                <td class="cancelled">Cancelled</td>
+            </tr>
+            <tr>
+                <td>IT510</td>
+                <td>Mumbai</td>
+                <td>7:45 AM</td>
+                <td>9:00 AM</td>
+                <td>
+                    <abbr title="1 hour 15 minutes">1h 15m</abbr>
+                </td>
+                <td class="on-time">On Time</td>
+            </tr>
+            <tr>
+                <td>AI220</td>
+                <td>Chennai</td>
+                <td>9:30 AM</td>
+                <td>11:00 AM</td>
+                <td>
+                    <abbr title="1 hour 30 minutes">1h 30m</abbr>
+                </td>
+                <td class="delayed">Delayed</td>
+            </tr>
+            <tr class="international">
+                <td>AI225</td>
+                <td>Paris</td>
+                <td>3:00 PM</td>
+                <td>5:30 PM</td>
+                <td>
+                    <abbr title="2 hours 30 minutes">2h 30m</abbr>
+                </td>
+                <td class="on-time">On Time</td>
+            </tr>
+            <tr>
+                <td>AI330</td>
+                <td>Mumbai</td>
+                <td>10:15 AM</td>
+                <td>11:45 AM</td>
+                <td>
+                    <abbr title="1 hour 30 minutes">1h 30m</abbr>
+                </td>
+                <td class="on-time">On Time</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
