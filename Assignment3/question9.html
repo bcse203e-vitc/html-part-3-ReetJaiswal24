@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        /* Vegetarian dish icon style */
+        .vegetarian::before {
+            content: "🥕 "; /* Carrot emoji for vegetarian dishes */
+        }
+        /* Highlighting rows with similar ingredients */
+        .common-ingredient {
+            background-color: #e7f7ff; /* Light blue background for common ingredients */
+        }
+        /* Customer Ratings column styling */
+        .ratings {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Restaurant Menu</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Category</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+                <th class="ratings">Customer Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Vegetarian Dish (Appetizer) -->
+            <tr class="common-ingredient">
+                <td class="vegetarian">Vegetable Soup</td>
+                <td>Appetizer</td>
+                <td>Carrot, Potato, Peas, Spices</td>
+                <td>$5.99</td>
+                <td class="ratings">★★★★☆</td>
+            </tr>
+            <!-- Vegetarian Dish (Main Course) -->
+            <tr class="common-ingredient">
+                <td class="vegetarian">Vegetable Curry</td>
+                <td>Main Course</td>
+                <td>Carrot, Potato, Peas, Spices, Rice</td>
+                <td>$12.99</td>
+                <td class="ratings">★★★☆☆</td>
+            </tr>
+            <!-- Non-Vegetarian Dish (Main Course) -->
+            <tr>
+                <td>Grilled Chicken</td>
+                <td>Main Course</td>
+                <td>Chicken, Spices, Lemon</td>
+                <td>$14.99</td>
+                <td class="ratings">★★★★☆</td>
+            </tr>
+            <!-- Dessert (Vegetarian) -->
+            <tr>
+                <td class="vegetarian">Apple Pie</td>
+                <td>Dessert</td>
+                <td>Apple, Flour, Sugar, Cinnamon</td>
+                <td>$3.99</td>
+                <td class="ratings">★★★★★</td>
+            </tr>
+            <!-- Vegetarian Dish (Appetizer) -->
+            <tr>
+                <td class="vegetarian">Bruschetta</td>
+                <td>Appetizer</td>
+                <td>Bread, Tomatoes, Garlic, Basil</td>
+                <td>$6.99</td>
+                <td class="ratings">★★★☆☆</td>
+            </tr>
+            <!-- Non-Vegetarian Dish (Dessert) -->
+            <tr>
+                <td>Cheesecake</td>
+                <td>Dessert</td>
+                <td>Cream Cheese, Sugar, Crust</td>
+                <td>$4.99</td>
+                <td class="ratings">★★★★☆</td>
+            </tr>
+            <!-- Vegetarian Dish (Main Course) -->
+            <tr>
+                <td class="vegetarian">Pasta Primavera</td>
+                <td>Main Course</td>
+                <td>Pasta, Bell Peppers, Tomato, Basil</td>
+                <td>$10.99</td>
+                <td class="ratings">★★★★★</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html
